@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Pulse Digital</string>
+    <string name="theme_title">Colour</string>
+    <string name="theme_mint">Mint</string>
+    <string name="theme_sunset">Sunset</string>
+    <string name="theme_ice">Ice</string>
+    <string name="theme_lime">Lime</string>
+    <string name="theme_rose">Rose</string>
 </resources>
