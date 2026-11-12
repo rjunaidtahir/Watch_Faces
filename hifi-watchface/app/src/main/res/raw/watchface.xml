@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WatchFace width="450" height="450">
+  <Metadata key="CLOCK_TYPE" value="HYBRID"/>
+  <Metadata key="PREVIEW_TIME" value="10:08:35"/>
+  <Scene backgroundColor="#ff000000">
+    <Group name="face" x="0" y="0" width="450" height="450">
+      <Variant mode="AMBIENT" target="alpha" value="110"/>
+      <PartImage x="0" y="0" width="450" height="450"><Image resource="bg"/></PartImage>
+      <PartImage x="89" y="161" width="120" height="120" pivotX="0.5" pivotY="0.5"><Image resource="wd_hi"/><Transform target="angle" value="180+([DAY_OF_WEEK]-4)*51.4286"/></PartImage>
+      <PartText x="119" y="202" width="60" height="28"><Text align="CENTER" verticalAlign="CENTER"><Font family="dejavu_bold" size="21.5" color="#fff1ece0"><Template>%s<Parameter expression="[DAY]"/></Template></Font></Text></PartText>
+      <PartText x="119" y="223" width="60" height="26"><Text align="CENTER" verticalAlign="CENTER"><Font family="dejavu_bold" size="19.0" color="#ff5a00"><Upper><Template>%s<Parameter expression="[MONTH_S]"/></Template></Upper></Font></Text></PartText>
+      <PartText x="268" y="185" width="70" height="20"><Text align="CENTER" verticalAlign="CENTER"><Font family="dejavu_bold" size="15.0" color="#fff1ece0"><Template>%s<Parameter expression="[STEP_COUNT]"/></Template></Font></Text></PartText>
+      <PartImage x="263" y="181" width="80" height="80" pivotX="0.5" pivotY="0.5"><Image resource="hr_needle"/><Transform target="angle" value="clamp([HEART_RATE],20,90)*3-150"/></PartImage>
+      <PartText x="278" y="231" width="50" height="24"><Text align="CENTER" verticalAlign="CENTER"><Font family="dejavu_bold" size="17.7" color="#ff5a00"><Template>%s<Parameter expression="round([HEART_RATE])"/></Template></Font></Text></PartText>
+      <PartImage x="165" y="269" width="120" height="120" pivotX="0.5" pivotY="0.5"><Image resource="vu_needle"/><Transform target="angle" value="-55+[BATTERY_PERCENT]*1.1"/></PartImage>
+      <PartText x="229" y="311" width="40" height="16"><Text align="END" verticalAlign="CENTER"><Font family="dejavu_bold" size="10.0" color="#ff2a2620"><Template>%s<Parameter expression="[BATTERY_PERCENT]"/></Template></Font></Text></PartText>
+      <DigitalClock x="0" y="0" width="450" height="450"><TimeText format="hh:mm" hourFormat="12" align="CENTER" verticalAlign="CENTER" x="174" y="135" width="110" height="30"><Font family="dejavu_bold" size="21.5" color="#ff1a1a14"></Font></TimeText></DigitalClock>
+      <PartText x="167" y="140" width="30" height="16"><Text align="CENTER" verticalAlign="CENTER"><Font family="dejavu_bold" size="11.4" color="#ff1a1a14"><Template>%s<Parameter expression="[AMPM_STRING]"/></Template></Font></Text></PartText>
+      <PartText x="261" y="140" width="16" height="14"><Text align="CENTER" verticalAlign="CENTER"><Font family="dejavu_bold" size="10.0" color="#ff1a1a14"><Template>%s<Parameter expression="[UNREAD_NOTIFICATION_COUNT]"/></Template></Font></Text></PartText>
+      <DigitalClock x="0" y="0" width="450" height="450"><TimeText format="hh:mm" hourFormat="24" align="CENTER" verticalAlign="CENTER" x="190" y="176" width="70" height="18"><Font family="dejavu_bold" size="14.0" color="#ffe8e2d0"></Font></TimeText></DigitalClock>
+      <AnalogClock x="0" y="0" width="450" height="450">
+        <HourHand resource="hour_hand" x="115" y="115" width="220" height="220" pivotX="0.5" pivotY="0.5"/>
+        <MinuteHand resource="minute_hand" x="65" y="65" width="320" height="320" pivotX="0.5" pivotY="0.5"/>
+        <SecondHand resource="second_hand" x="55" y="55" width="340" height="340" pivotX="0.5" pivotY="0.5">
+          <Variant mode="AMBIENT" target="alpha" value="0"/>
+          <Sweep frequency="15"/>
+        </SecondHand>
+      </AnalogClock>
+      <PartImage x="205" y="205" width="40" height="40"><Image resource="hub"/></PartImage>
+    </Group>
+  </Scene>
+</WatchFace>
