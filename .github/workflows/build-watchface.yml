@@ -1,4 +1,4 @@
-name: Build watch face
+name: Build watch faces
 on:
   push:
     branches: [main]
@@ -17,22 +17,13 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: "8.7"
-      - name: Build
-        id: build
-        working-directory: hifi-watchface
-        run: |
-          set -o pipefail
-          gradle assembleDebug assembleRelease --no-daemon --stacktrace 2>&1 | tee build.log
-      - name: Collect output
-        if: always()
+      - name: Build all faces
         run: |
           mkdir -p dist
-          cp hifi-watchface/build.log dist/build.log || true
-          cp hifi-watchface/app/build/outputs/apk/release/app-release.apk dist/HiFiStereo-release.apk || true
-          cp hifi-watchface/app/build/outputs/apk/debug/app-debug.apk dist/HiFiStereo-debug.apk || true
-          # keep log small
-          tail -n 200 dist/build.log > dist/build-tail.log || true
-          rm -f dist/build.log
+          for d in hifi-watchface pulse-digital; do
+            (cd $d && gradle assembleRelease --no-daemon --stacktrace 2>&1 | tail -n 150 > ../dist/$d-build-tail.log) || true
+            cp $d/app/build/outputs/apk/release/app-release.apk dist/$d-release.apk || true
+          done
       - name: Publish to dist branch
         if: always()
         run: |

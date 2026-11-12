@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WatchFace width="450" height="450">
+  <Metadata key="CLOCK_TYPE" value="DIGITAL"/>
+  <Metadata key="PREVIEW_TIME" value="10:36:56"/>
+  <Scene backgroundColor="#ff000000">
+    <Group name="face" x="0" y="0" width="450" height="450">
+      <Variant mode="AMBIENT" target="alpha" value="110"/>
+      <PartImage x="0" y="0" width="450" height="450"><Image resource="bg"/></PartImage>
+      <PartText x="95" y="63" width="260" height="30"><Text align="CENTER" verticalAlign="CENTER"><Font family="dejavu_bold" size="22" color="#7cffb2"><Upper><Template>%s %s %s<Parameter expression="[DAY_OF_WEEK_S]"/><Parameter expression="[DAY]"/><Parameter expression="[MONTH_S]"/></Template></Upper></Font></Text></PartText>
+      <DigitalClock x="0" y="0" width="450" height="450"><TimeText format="hh:mm" hourFormat="12" align="CENTER" verticalAlign="CENTER" x="25" y="100" width="330" height="120"><Font family="dejavu_cond_bold" size="100" color="#ffffffff"></Font></TimeText></DigitalClock>
+      <DigitalClock x="0" y="0" width="450" height="450"><TimeText format="ss" hourFormat="12" align="CENTER" verticalAlign="CENTER" x="340" y="163" width="70" height="40"><Variant mode="AMBIENT" target="alpha" value="0"/><Font family="dejavu_bold" size="34" color="#7cffb2"></Font></TimeText></DigitalClock>
+      <PartText x="345" y="124" width="60" height="28"><Text align="CENTER" verticalAlign="CENTER"><Font family="dejavu_bold" size="20" color="#ffffffff"><Template>%s<Parameter expression="[AMPM_STRING]"/></Template></Font></Text></PartText>
+      <PartText x="75" y="226" width="170" height="40"><Text align="START" verticalAlign="CENTER"><Font family="dejavu_bold" size="32" color="#ffffffff"><Template>%s<Parameter expression="[STEP_COUNT]"/></Template></Font></Text></PartText>
+      <PartText x="302" y="230" width="70" height="32"><Text align="END" verticalAlign="CENTER"><Font family="dejavu_bold" size="24" color="#7cffb2"><Template>%s<Parameter expression="[STEP_PERCENT]"/></Template></Font></Text></PartText>
+      <PartImage x="75" y="262" width="300" height="10" pivotX="0" pivotY="0.5"><Image resource="bar_fill"/><Transform target="scaleX" value="clamp([STEP_PERCENT],1,100)/100"/></PartImage>
+      <PartText x="75" y="311" width="80" height="32"><Text align="CENTER" verticalAlign="CENTER"><Font family="dejavu_bold" size="24" color="#ffffffff"><Template>%s<Parameter expression="round([HEART_RATE])"/></Template></Font></Text></PartText>
+      <PartText x="185" y="311" width="80" height="32"><Text align="CENTER" verticalAlign="CENTER"><Font family="dejavu_bold" size="24" color="#ffffffff"><Template>%s<Parameter expression="[BATTERY_PERCENT]"/></Template></Font></Text></PartText>
+      <PartText x="295" y="311" width="80" height="32"><Text align="CENTER" verticalAlign="CENTER"><Font family="dejavu_bold" size="24" color="#ffffffff"><Template>%s<Parameter expression="round([STEP_COUNT]*0.075)/100"/></Template></Font></Text></PartText>
+      <PartText x="110" y="368" width="80" height="40"><Text align="CENTER" verticalAlign="CENTER"><Font family="dejavu_bold" size="30" color="#7cffb2"><Template>%s°<Parameter expression="[WEATHER.TEMPERATURE]"/></Template></Font></Text></PartText>
+      <PartText x="187" y="367" width="150" height="20"><Text align="CENTER" verticalAlign="CENTER"><Font family="dejavu_bold" size="13" color="#ffffffff"><Template>%s<Parameter expression="[WEATHER.CONDITION_NAME]"/></Template></Font></Text></PartText>
+      <PartText x="187" y="389" width="150" height="18"><Text align="CENTER" verticalAlign="CENTER"><Font family="dejavu_bold" size="12" color="#ff7f8c96"><Template>L %s°  H %s°<Parameter expression="[WEATHER.DAY_TEMPERATURE_LOW]"/><Parameter expression="[WEATHER.DAY_TEMPERATURE_HIGH]"/></Template></Font></Text></PartText>
+    </Group>
+  </Scene>
+</WatchFace>

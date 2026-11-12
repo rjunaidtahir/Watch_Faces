@@ -11,3 +11,6 @@ Analog/digital hybrid face: orange hands, LCD time with AM/PM and unread count, 
 
 ### Install on the watch
 Use an APK installer for Wear OS (e.g. "Wear Installer 2") from the phone, or `adb install` over Wi-Fi debugging. Then long-press the watch face on the watch, swipe to the end, and choose **Hi-Fi Stereo**. Allow the body-sensor / activity permissions so heart rate and steps show.
+
+## pulse-digital — "Pulse Digital"
+Original digital face: big time with seconds and AM/PM, date, steps with progress bar, heart rate, battery, distance, and weather (temp, condition, low/high). Needs Wear OS 5+ (Galaxy Watch 7 is fine). APK appears in `apk/` after each build, or on the `watchface-dist` branch.
