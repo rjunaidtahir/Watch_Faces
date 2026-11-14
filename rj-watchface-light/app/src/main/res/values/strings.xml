@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RJ’s Watch Face 2</string>
+    <string name="theme_title">Colour theme</string>
+    <string name="theme_crimson">Crimson</string>
+    <string name="theme_ivory">Ivory</string>
+    <string name="theme_sage">Sage</string>
+    <string name="theme_rosegold">Rosegold</string>
+    <string name="theme_ice">Ice</string>
+    <string name="theme_graphite">Graphite</string>
+</resources>
