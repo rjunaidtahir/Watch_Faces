@@ -21,7 +21,7 @@ jobs:
         run: |
           mkdir -p dist
           for d in hifi-watchface pulse-digital rj-watchface; do
-            (cd $d && gradle assembleRelease --no-daemon --stacktrace 2>&1 | tail -n 150 > ../dist/$d-build-tail.log) || true
+            (cd $d && gradle assembleRelease --no-daemon 2>&1 | grep -vE '^\s+at ' | tail -n 80 > ../dist/$d-build-tail.log) || true
             cp $d/app/build/outputs/apk/release/app-release.apk dist/$d-release.apk || true
           done
       - name: Publish to dist branch

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">RJ's Watch Face 1</string>
+    <string name="app_name">RJ’s Watch Face 1</string>
     <string name="theme_title">Colour theme</string>
     <string name="theme_nebula">Nebula</string>
     <string name="theme_solar">Solar</string>
