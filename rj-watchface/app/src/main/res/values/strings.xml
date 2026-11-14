@@ -7,4 +7,13 @@
     <string name="theme_aurora">Aurora</string>
     <string name="theme_sakura">Sakura</string>
     <string name="theme_ice">Ice</string>
+    <string name="theme_ember">Ember</string>
+    <string name="theme_mint">Mint</string>
+    <string name="theme_royal">Royal</string>
+    <string name="theme_ocean">Ocean</string>
+    <string name="theme_crimson">Crimson</string>
+    <string name="theme_lime">Lime</string>
+    <string name="theme_violet">Violet</string>
+    <string name="theme_rosegold">Rosegold</string>
+    <string name="theme_mono">Mono</string>
 </resources>
