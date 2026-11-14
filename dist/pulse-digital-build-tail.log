@@ -21,10 +21,9 @@ Daemon will be stopped at the end of the build
 > Task :app:processReleaseManifest
 > Task :app:desugarReleaseFileDependencies
 > Task :app:mergeReleaseStartupProfile
-> Task :app:mergeReleaseResources
-> Task :app:processReleaseManifestForPackage
 > Task :app:mergeReleaseArtProfile
 > Task :app:mergeExtDexRelease
+> Task :app:mergeReleaseResources
 > Task :app:mergeReleaseShaders
 > Task :app:compileReleaseShaders NO-SOURCE
 > Task :app:generateReleaseAssets UP-TO-DATE
@@ -32,23 +31,24 @@ Daemon will be stopped at the end of the build
 > Task :app:compressReleaseAssets
 > Task :app:extractReleaseVersionControlInfo
 > Task :app:processReleaseJavaRes NO-SOURCE
-> Task :app:collectReleaseDependencies
+> Task :app:processReleaseManifestForPackage
 > Task :app:mergeReleaseJavaResource
-> Task :app:processReleaseResources
+> Task :app:collectReleaseDependencies
 > Task :app:sdkReleaseDependencyData
+> Task :app:validateSigningRelease
+> Task :app:writeReleaseAppMetadata
+> Task :app:writeReleaseSigningConfigVersions
+> Task :app:processReleaseResources
 > Task :app:compileReleaseJavaWithJavac NO-SOURCE
 > Task :app:dexBuilderRelease
 > Task :app:mergeReleaseGlobalSynthetics
 > Task :app:mergeDexRelease
-> Task :app:validateSigningRelease
 > Task :app:compileReleaseArtProfile
-> Task :app:writeReleaseAppMetadata
-> Task :app:writeReleaseSigningConfigVersions
 > Task :app:optimizeReleaseResources
 > Task :app:packageRelease
 > Task :app:createReleaseApkListingFileRedirect
 > Task :app:assembleRelease
-gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run-1794640355831.json
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run-1794642323322.json
 
-BUILD SUCCESSFUL in 11s
+BUILD SUCCESSFUL in 8s
 37 actionable tasks: 37 executed

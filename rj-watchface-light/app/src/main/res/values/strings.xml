@@ -8,4 +8,12 @@
     <string name="theme_rosegold">Rosegold</string>
     <string name="theme_ice">Ice</string>
     <string name="theme_graphite">Graphite</string>
+    <string name="theme_cocoa">Cocoa</string>
+    <string name="theme_sagemist">Sagemist</string>
+    <string name="theme_lilac">Lilac</string>
+    <string name="theme_peach">Peach</string>
+    <string name="theme_powderteal">Powderteal</string>
+    <string name="theme_butter">Butter</string>
+    <string name="theme_mistnavy">Mistnavy</string>
+    <string name="theme_rosewood">Rosewood</string>
 </resources>

@@ -10,8 +10,8 @@ android {
         applicationId = "com.junaid.rjwatchface1"
         minSdk = 34
         targetSdk = 34
-        versionCode = 12
-        versionName = "2.5"
+        versionCode = 13
+        versionName = "2.6"
     }
 
     buildTypes {
