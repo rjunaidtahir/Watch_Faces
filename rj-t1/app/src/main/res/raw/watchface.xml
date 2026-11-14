@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WatchFace width="450" height="450">
+  <Metadata key="CLOCK_TYPE" value="DIGITAL"/>
+  <Metadata key="PREVIEW_TIME" value="10:08:32"/>
+  <UserConfigurations>
+    <ColorConfiguration id="theme" displayName="theme_title" defaultValue="0"><ColorOption id="0" displayName="theme_nebula" colors="#ff8b7bff #ff4be0ff #ffff6ad5"/><ColorOption id="1" displayName="theme_solar" colors="#ffffb23f #ffff6a3d #ffffe27a"/><ColorOption id="2" displayName="theme_aurora" colors="#ff5dffb4 #ff37c8ff #ffb6ff6a"/><ColorOption id="3" displayName="theme_sakura" colors="#ffff8fc0 #ffffc2a1 #ffc7a6ff"/><ColorOption id="4" displayName="theme_ice" colors="#ffe8f3ff #ff7db7ff #ffa9c4e6"/></ColorConfiguration>
+  </UserConfigurations>
+  <Scene backgroundColor="#ff000000"><PartImage x="0" y="0" width="450" height="450"><Image resource="bg_base"/></PartImage><DigitalClock x="0" y="0" width="450" height="450"><TimeText format="hh:mm" hourFormat="12" align="CENTER" verticalAlign="CENTER" x="60" y="150" width="330" height="140"><Font family="interdisplay_black" size="90" color="#ffffffff"></Font></TimeText></DigitalClock></Scene>
+</WatchFace>
