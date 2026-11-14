@@ -9,8 +9,8 @@ Daemon will be stopped at the end of the build
 > Task :app:mergeReleaseNativeDebugMetadata NO-SOURCE
 > Task :app:checkReleaseDuplicateClasses
 > Task :app:javaPreCompileRelease
-> Task :app:generateReleaseResValues
 > Task :app:checkReleaseAarMetadata
+> Task :app:generateReleaseResValues
 > Task :app:mapReleaseSourceSetPaths
 > Task :app:generateReleaseResources
 > Task :app:packageReleaseResources
@@ -22,33 +22,33 @@ Daemon will be stopped at the end of the build
 > Task :app:processReleaseManifest
 > Task :app:desugarReleaseFileDependencies
 > Task :app:mergeReleaseStartupProfile
+> Task :app:processReleaseManifestForPackage
 > Task :app:mergeReleaseArtProfile
-> Task :app:mergeReleaseShaders
 > Task :app:mergeExtDexRelease
+> Task :app:mergeReleaseShaders
 > Task :app:compileReleaseShaders NO-SOURCE
 > Task :app:generateReleaseAssets UP-TO-DATE
 > Task :app:mergeReleaseAssets
 > Task :app:compressReleaseAssets
 > Task :app:extractReleaseVersionControlInfo
 > Task :app:processReleaseJavaRes NO-SOURCE
-> Task :app:processReleaseManifestForPackage
-> Task :app:mergeReleaseJavaResource
 > Task :app:collectReleaseDependencies
-> Task :app:sdkReleaseDependencyData
 > Task :app:processReleaseResources
-> Task :app:validateSigningRelease
+> Task :app:mergeReleaseJavaResource
+> Task :app:sdkReleaseDependencyData
 > Task :app:compileReleaseJavaWithJavac NO-SOURCE
 > Task :app:dexBuilderRelease
 > Task :app:mergeReleaseGlobalSynthetics
+> Task :app:mergeDexRelease
+> Task :app:validateSigningRelease
+> Task :app:compileReleaseArtProfile
 > Task :app:writeReleaseAppMetadata
 > Task :app:writeReleaseSigningConfigVersions
-> Task :app:mergeDexRelease
-> Task :app:compileReleaseArtProfile
 > Task :app:optimizeReleaseResources
 > Task :app:packageRelease
 > Task :app:createReleaseApkListingFileRedirect
 > Task :app:assembleRelease
-gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run-1794630040927.json
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run-1794630700248.json
 
-BUILD SUCCESSFUL in 10s
+BUILD SUCCESSFUL in 15s
 37 actionable tasks: 37 executed
