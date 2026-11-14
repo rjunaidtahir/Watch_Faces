@@ -20,7 +20,7 @@ jobs:
       - name: Build all faces
         run: |
           mkdir -p dist
-          for d in hifi-watchface pulse-digital rj-watchface rj-t1 rj-t2 rj-t3; do
+          for d in hifi-watchface pulse-digital rj-watchface rj-t1 rj-t2; do
             (cd $d && gradle assembleRelease --no-daemon 2>&1 | grep -vE '^\s+at ' | tail -n 80 > ../dist/$d-build-tail.log) || true
             cp $d/app/build/outputs/apk/release/app-release.apk dist/$d-release.apk || true
           done
